@@ -1,3 +1,7 @@
+// ---------------------ASSIGMENT 04  ----------------------------------
+
+
+
 var x = 10    //it is a number 
 var y = "10"  //it is a string 
 var z = 12
