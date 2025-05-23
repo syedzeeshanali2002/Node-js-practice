@@ -1,0 +1,65 @@
+MongoDB is a document database. It stores data in a type of JSON format called BSON.
+
+Insert Data =>      db.employees.insert({firstname:"hayat",lastname:"khan",gender:"female"})
+                    db.employees.insert({firstname:"rahul",lastname:"thakur",gender:"male"})
+                    db.employees.insert({firstname:"syed",lastname:"ali",gender:"male"})
+
+Find Data
+There are 2 methods to find and select data from a MongoDB collection, 
+           find() and findOne().
+db.employees.find()   output =>>     [
+  {
+    _id: ObjectId('6830446f943ee763c7c59f35'),
+    firstname: 'syed',
+    lastname: 'ali',
+    gender: 'male'
+  }
+]
+mydb> db.employees.insert({firstname:"rahul",lastname:"thakur",gender:"male"})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('68304682943ee763c7c59f36') }
+}
+mydb> db.employees.insert({firstname:"hayat",lastname:"khan",gender:"female"})
+{
+  acknowledged: true,
+  insertedIds: { '0': ObjectId('68304699943ee763c7c59f37') }
+}
+mydb> db.employees.find()
+[
+  {
+    _id: ObjectId('6830446f943ee763c7c59f35'),
+    firstname: 'syed',
+    lastname: 'ali',
+    gender: 'male'
+  },
+  {
+    _id: ObjectId('68304682943ee763c7c59f36'),
+    firstname: 'rahul',
+    lastname: 'thakur',
+    gender: 'male'
+  },
+  {
+    _id: ObjectId('68304699943ee763c7c59f37'),
+    firstname: 'hayat',
+    lastname: 'khan',
+    gender: 'female'
+  }
+]
+
+
+
+Update Document
+To update an existing document we can use the updateOne() or updateMany() methods.
+
+The first parameter is a query object to define which document or documents should be updated.
+
+The second parameter is an object defining the updated data.
+
+
+Delete Documents
+We can delete documents by using the methods deleteOne() or deleteMany().
+
+These methods accept a query object. The matching documents will be deleted.
+
+
