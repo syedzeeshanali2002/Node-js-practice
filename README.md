@@ -1,5 +1,6 @@
 # Node-js-practice
 
+
 1) NodeJS is a runtime environment that allows JavaScript to run outside the browser. 
 2) JavaScript is a versatile, high-level programming language that is widely supported across all major operating systems.
 3) Variables in JavaScript are used to store data values. They act as named containers for information that can be used and modified throughout a program. Before using a variable, it needs to be declared using one of the following keywords: var, let, or const.
